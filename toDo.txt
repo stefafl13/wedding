@@ -1,0 +1,13 @@
+- Montar repo de forma remota
+- Crear proyecto de React step by step y desplegarlo
+- Montar el bootstrap
+- Crear animacion inicial de la carta
+- Crear folio basico con info
+- Darle estilo al sobre
+- Revisar curso de diseño grafico basico
+- Revisar IA para diseño de imagenes 
+- Generar fondos basicos
+- Dar estilo a la info basica
+- Ver info adicional
+- Personalizar la invitacion
+- Montar en internet
