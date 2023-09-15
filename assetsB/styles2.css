@@ -1,0 +1,421 @@
+.website-breeze__text-center {
+    text-align: center;
+}
+
+.website-breeze__container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 15px;
+    color: #000000;
+    font-family: 'Fira Sans';
+}
+
+.website-breeze__container a { 
+    color: #814646;
+}
+
+.website-breeze__text-center {
+    text-align: center;
+}
+
+/* Header START */
+
+.website-breeze__cover {
+    /*max-width: 1800px;*/
+    padding-top: 60%;
+    color: #000000;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Sans';
+    transition: min-height 0.03s, height 0.03s;
+}
+
+.website-breeze__cover-backdrop {
+    background: #2a2829;
+    opacity: 0.1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.website-breeze__cover-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+.website-breeze__centred-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.website-breeze__menu-btn {
+    display: none;
+}
+
+.website-breeze__close-menu-btn {
+    display: none;
+}
+
+.website-breeze__cover-menu {
+    display: flex;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.website-breeze__cover-rsvp-btn {
+    border: 2px solid #814646;
+    color: #814646;
+    padding: 14px 26px 14px 26px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.website-breeze__cover-rsvp-btn:hover,
+.website-breeze__cover-rsvp-btn:focus {
+    color: #FFFFFF;
+    background: #814646;
+    text-decoration: none;
+}
+
+.website-breeze__cover-link a {
+    color: #814646;
+    margin-right: 25px;
+    letter-spacing: 0.3px;
+}
+
+.website-breeze__cover-link a:hover,
+.website-breeze__cover-link a:focus {
+    color: #814646;
+}
+
+.website-breeze__date {
+    font-size: 33px;
+    font-weight: 200;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: margin-top 0.2s, margin-bottom: 0.2s;
+}
+
+.website-breeze__date:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+    left: -30px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto auto;
+}
+
+.website-breeze__date:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+    right: -30px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto auto;
+}
+
+.website-breeze__h1 {
+    font-size: 60px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    letter-spacing: 0.2px;
+    transition: margin-top 0.2s, margin-bottom: 0.2s;
+}
+
+.website-breeze__cover-h2 {
+    font-size: 25px;
+    font-weight: 200;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+    transition: margin-top 0.2s, margin-bottom: 0.2s;
+}
+
+/* Header END */
+
+.website-breeze__section-h2 {
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    position: relative;
+    left: -5px;
+    margin-bottom: 10px;
+}
+
+.website-breeze__section-h2:before {
+    content: '';
+    display: block;
+    background: rgba(0,0,0,0.08);
+    width: calc(100% - 40px);
+    height: 40%;
+    position: absolute;
+    bottom: 5px;
+}
+
+.website-breeze__section-h3 {
+    font-weight: 200;
+    font-size: 40px;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+}
+
+.website-breeze__section-date {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 0px;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.website-breeze__section-time {
+    font-weight: 200;
+    font-size: 28px;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    margin-top: 2px;
+}
+
+.website-breeze__section-location {
+    font-weight: 200;
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin-top: 2px;
+}
+
+.website-breeze__section-rsvp {
+    background: transparent;
+    border: 2px solid #814646;
+    color: #814646;
+    padding: 12px 23px 12px 23px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.website-breeze__section-rsvp:hover,
+.website-breeze__section-rsvp:focus {
+    color: #FFFFFF;
+    background: #814646;
+    text-decoration: none;
+}
+
+.website-breeze__two-in-row {
+    display: flex;
+    width: 100%;
+}
+
+.website-breeze__two-in-row-column {
+    padding: 15px;
+    width: 50%;
+}
+
+.website-breeze__vertical-centred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.website-breeze__image {
+    background-image: url('wedding1.jpeg');
+    background-size: cover; /* Adjust this to control image sizing */
+    background-position: center center;
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+}
+
+.website-breeze__story-image {
+    width: 100%;
+    padding-top: 65%;
+    position: relative;
+}
+
+.website-breeze__story {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 34px;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.website-breeze__rsvp-form {
+    padding: 0px 15px 0px 15px;
+}
+
+.website-breeze__rsvp-form-odd {
+    background: rgba(103,83,83,0.05);
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.website-breeze__rsvp-left-border {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.website-breeze__rsvp-left-border:before {
+    content: '';
+    display: block;
+    background: rgba(103,83,83,0.15);
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    border-radius: 3px;
+}
+
+.website-breeze__rsvp-form-two {
+    display: block;
+}
+
+.website-breeze__rsvp-form-label {
+    font-size: 16px;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.website-breeze__rsvp-form-label-short {
+    width: 100%;
+    max-width: 250px;
+}
+
+.website-breeze__rsvp-form-label-fill {
+    width: 100%;
+    max-width: 520px;
+}
+
+.website-breeze__rsvp-form-extra {
+    margin-right: 20px;
+}
+
+.website-breeze__rsvp-form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px;
+    font-size: 16px;
+    background: rgba(103,83,83,0.03);
+    border: 1px solid #675353;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 0px;
+}
+
+.website-breeze__rsvp-form-radio {
+    display: inline-flex;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.website-breeze__rsvp-form-radio:hover .website-breeze__rsvp-form-radio-element:after,
+.website-breeze__rsvp-form-radio:hover .website-breeze__rsvp-form-checkbox-element:after,
+.website-breeze__rsvp-form-radio_active .website-breeze__rsvp-form-radio-element:after,
+.website-breeze__rsvp-form-radio_active .website-breeze__rsvp-form-checkbox-element:after {
+    content: '';
+    display: block;
+    width: 14px;
+}
+
+.body_cover {
+    background-image: url('weddingBackground.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center center;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-top: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.website-breeze__container a {
+    color: #814646;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Fira Sans,sans-serif;
+    letter-spacing: 0;
+    line-height: 1.28581;
+    text-transform: none;
+    padding: 0;
+    width: 100%;
+    overflow-y: scroll;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    color: #182026;
+    display: block;
+}

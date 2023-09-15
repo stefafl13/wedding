@@ -1,0 +1,83 @@
+.card-with-bg {
+    background-image: url('./../images/weddingBackground.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Adjust this to control image sizing */
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; /* Set the height of the card to the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Apply Fira Sans font to specific elements */
+body, h1, h2, p, .btn {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Customize the navigation bar */
+.navbar {
+    background: transparent;
+    margin: 1em;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Style for the section transitions */
+.page-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Background image for the Welcome section */
+#welcome {
+    background-image: url('./../images/blueGradient2.jpeg'); /* Replace with your welcome image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff; /* Text color for better visibility on the image */
+}
+
+#welcome-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#couple-names, #couple-date {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2em;
+}
+
+#couple-names-span{
+    border-top: 0.3em solid #fff; /* Adjust the border properties as needed */
+    width: 5em; /* Set the width of the line */
+    margin: 0 auto; /* Center the line horizontally */
+    margin-bottom: 1em; /* Add margin to space it from the title */
+    margin-top: 1em; /* Add margin to space it from the title */
+}
+
+language-flag-circle {
+    display: inline-block;
+    width: 30px; /* Adjust the width of the circle */
+    height: 30px; /* Adjust the height of the circle */
+    border-radius: 50%; /* Create a circular shape */
+    background-color: #333; /* Set the background color of the circle */
+    text-align: center;
+    line-height: 30px; /* Vertically center the flag emoji */
+}
+
+.language-flag {
+    font-size: 20px; /* Adjust the font size of the flag emoji */
+    color: #fff; /* Set the color of the flag emoji */
+}

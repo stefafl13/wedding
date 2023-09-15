@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John & Jane's Wedding</title>
+    
+    <!-- Link to Fira Sans font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assetsB/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
+        <a class="navbar-brand" id="nav-welcome" href="#">Boda de Ana & Jaime</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-details-link" href="#details">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-photo-link" href="#foto">Subir una foto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-rsvp-link" href="#rsvp">RSVP</a>
+                </li>
+                <!-- Language Selector inside the navbar -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="language-flag-circle">
+                            <span id="selectedFlag" class="language-flag">🇨🇴🇨🇱</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <button class="dropdown-item" type="button" onclick="switchLanguage('fr')">🇫🇷</button>
+                        <button class="dropdown-item" type="button" onclick="switchLanguage('es')">🇨🇴🇨🇱</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section (Names Only) -->
+    <section id="welcome" class="page-section">
+        <h2 id="couple-date">27 octobre 2023</h2>
+        <span id="couple-names-span"></span>
+        <div id="couple-names">¡Nos vamos a casar!<br></div>
+        <br>
+        <br>
+        <h1 id="welcome-title">Ana & Jaime</h1>
+    </section>
+
+    <!-- Wedding Details Section -->
+    <section id="details" class="page-section card-with-bg">
+        <div class="card-body">
+            <!-- Insert the image before the card title -->
+            <img src="wedding-ring-icon.png" alt="Wedding Ring" class="img-fluid" style="max-width: 50px; margin-bottom: 10px;">
+            <h1 class="card-title" id="details-title">Wedding Details</h1>
+            <!-- Add wedding details here -->
+            <p class="card-text" id="event-date">Saturday, October 15, 2023</p>
+            <p class="card-text" id="event-location">Central Park, New York City</p>
+            <a href="#rsvp" class="btn btn-primary">RSVP</a>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="foto" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Subir una foto</h2>
+                            <!-- Add RSVP form here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">RSVP</h2>
+                            <!-- Add RSVP form here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="assetsB/scripts.js"></script>
+
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

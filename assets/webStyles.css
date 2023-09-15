@@ -1,0 +1,905 @@
+.website-breeze__text-center {
+    text-align: center;
+}
+
+.website-breeze__container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 15px;
+    color: #000000;
+    font-family: 'Fira Sans';
+}
+
+.website-breeze__container a {
+    color: #814646;
+}
+
+.website-breeze__text-center {
+    text-align: center;
+}
+
+/* Header START */
+
+.website-breeze__cover {
+    /*max-width: 1800px;*/
+    padding-top: 60%;
+    color: #000000;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Sans';
+    transition: min-height 0.03s, height 0.03s;
+}
+
+.website-breeze__cover-backdrop {
+    background: #2a2829;
+    opacity: 0.1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.website-breeze__cover-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+.website-breeze__centred-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.website-breeze__menu-btn {
+    display: none;
+}
+
+.website-breeze__close-menu-btn {
+    display: none;
+}
+
+.website-breeze__cover-menu {
+    display: flex;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.website-breeze__cover-rsvp-btn {
+    border: 2px solid #814646;
+    color: #814646;
+    padding: 14px 26px 14px 26px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.website-breeze__cover-rsvp-btn:hover,
+.website-breeze__cover-rsvp-btn:focus {
+    color: #FFFFFF;
+    background: #814646;
+    text-decoration: none;
+}
+
+.website-breeze__cover-link a {
+    color: #814646;
+    margin-right: 25px;
+    letter-spacing: 0.3px;
+}
+
+.website-breeze__cover-link a:hover,
+.website-breeze__cover-link a:focus {
+    color: #814646;
+}
+
+.website-breeze__date {
+    font-size: 33px;
+    font-weight: 200;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.website-breeze__date:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+    left: -30px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto auto;
+}
+
+.website-breeze__date:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+    right: -30px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto auto;
+}
+
+.website-breeze__h1 {
+    font-size: 60px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    letter-spacing: 0.2px;
+}
+
+.website-breeze__cover-h2 {
+    font-size: 25px;
+    font-weight: 200;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+/* Header END */
+
+.website-breeze__section-h2 {
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    position: relative;
+    left: -5px;
+    margin-bottom: 10px;
+}
+
+.website-breeze__section-h2:before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: calc(100% - 40px);
+    height: 40%;
+    position: absolute;
+    bottom: 5px;
+}
+
+.website-breeze__section-h3 {
+    font-weight: 200;
+    font-size: 40px;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+}
+
+.website-breeze__section-date {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 0px;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.website-breeze__section-time {
+    font-weight: 200;
+    font-size: 28px;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    margin-top: 2px;
+}
+
+.website-breeze__section-location {
+    font-weight: 200;
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin-top: 2px;
+}
+
+.website-breeze__section-rsvp {
+    background: transparent;
+    border: 2px solid #814646;
+    color: #814646;
+    padding: 12px 23px 12px 23px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.website-breeze__section-rsvp:hover,
+.website-breeze__section-rsvp:focus {
+    color: #FFFFFF;
+    background: #814646;
+    text-decoration: none;
+}
+
+.website-breeze__two-in-row {
+    display: flex;
+    width: 100%;
+}
+
+.website-breeze__two-in-row-column {
+    padding: 15px;
+    width: 50%;
+}
+
+.website-breeze__vertical-centred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.website-breeze__image {
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+}
+
+.website-breeze__story-image {
+    width: 100%;
+    padding-top: 65%;
+    position: relative;
+}
+
+.website-breeze__story {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 34px;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.website-breeze__rsvp-form {
+    padding: 0px 15px 0px 15px;
+}
+
+.website-breeze__rsvp-form-odd {
+    background: rgba(103, 83, 83, 0.05);
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.website-breeze__rsvp-left-border {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.website-breeze__rsvp-left-border:before {
+    content: '';
+    display: block;
+    background: rgba(103, 83, 83, 0.15);
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    border-radius: 3px;
+}
+
+.website-breeze__rsvp-form-two {
+    display: block;
+}
+
+.website-breeze__rsvp-form-label {
+    font-size: 16px;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.website-breeze__rsvp-form-label-short {
+    width: 100%;
+    max-width: 250px;
+}
+
+.website-breeze__rsvp-form-label-fill {
+    width: 100%;
+    max-width: 520px;
+}
+
+.website-breeze__rsvp-form-extra {
+    margin-right: 20px;
+}
+
+.website-breeze__rsvp-form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px;
+    font-size: 16px;
+    background: rgba(103, 83, 83, 0.03);
+    border: 1px solid #675353;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 0px;
+}
+
+.website-breeze__rsvp-form-radio {
+    display: inline-flex;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.website-breeze__rsvp-form-radio:hover .website-breeze__rsvp-form-radio-element:after,
+.website-breeze__rsvp-form-radio:hover .website-breeze__rsvp-form-checkbox-element:after,
+.website-breeze__rsvp-form-radio_active .website-breeze__rsvp-form-radio-element:after,
+.website-breeze__rsvp-form-radio_active .website-breeze__rsvp-form-checkbox-element:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    background: rgba(103, 83, 83, 0.4);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto auto;
+    border-radius: 100%;
+}
+
+.website-breeze__rsvp-form-radio_active .website-breeze__rsvp-form-radio-element:after {
+    background: rgba(103, 83, 83, 1);
+}
+
+.website-breeze__rsvp-form-radio_active .website-breeze__rsvp-form-checkbox-element:after {
+    background: rgba(103, 83, 83, 1);
+    border-radius: 0%;
+}
+
+.website-breeze__rsvp-form-radio_active:hover .website-breeze__rsvp-form-radio-element:after,
+.website-breeze__rsvp-form-radio_active:hover .website-breeze__rsvp-form-checkbox-element:after {
+    background: rgba(103, 83, 83, 1);
+}
+
+.website-breeze__rsvp-form-radio-element {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 100%;
+    border: 2px solid #675353;
+    position: relative;
+}
+
+.website-breeze__rsvp-form-radio:hover .website-breeze__rsvp-form-checkbox-element:after {
+    border-radius: 0%;
+}
+
+.website-breeze__rsvp-form-checkbox-element {
+    border-radius: 0%;
+}
+
+.website-breeze__rsvp-relatives {
+    font-size: 25px;
+    font-weight: 200;
+    margin: 20px 0px 5px;
+}
+
+.website-breeze__rsvp-form-submit {
+    background: transparent;
+    border: 2px solid #675353;
+    color: #675353;
+    padding: 12px 23px 12px 23px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.website-breeze__rsvp-form-submit:hover,
+.website-breeze__rsvp-form-submit:focus {
+    color: #FFFFFF;
+    background: #675353;
+    text-decoration: none;
+}
+
+.website-breeze__rsv-final {
+    font-size: 26px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.website-breeze__configuration-btn {
+    border: 0px;
+    letter-spacing: 0.9px;
+    background: rgba(103, 83, 83, 0.15);
+    color: #675353;
+    width: 100%;
+    padding: 10px;
+}
+
+.website-breeze__configuration-btn:hover {
+    background: rgba(103, 83, 83, 0.25);
+}
+
+.website-breeze__drop-zone {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px dashed rgba(103, 83, 83, 0.5);
+    background: rgba(103, 83, 83, 0.03);
+    min-height: 300px;
+    cursor: pointer;
+}
+
+.website-breeze__drop-zone:hover {
+    border: 2px dashed #675353;
+}
+
+.website-breeze__drop-zone-delete {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.website-breeze__non-ideal-state {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 280px;
+}
+
+.website-breeze__photo-loading {
+    width: 100px;
+    height: 180px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+.website-breeze__photo-loading-counter {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    color: #675353;
+}
+
+.website-breeze__made-with {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+.website-breeze__made-with a {
+    color: #814646;
+}
+
+.website-breeze__made-with a:hover,
+.website-breeze__made-with a:focus {
+    color: #814646;
+}
+
+.website-breeze__editable {
+    border: 1px dashed rgba(0, 0, 0, 0);
+}
+
+.website-breeze__editable-on-header {
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.website-breeze__editable-on-header:hover {
+    border: 1px dashed #000000;
+}
+
+.website-breeze__editable-on {
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.website-breeze__editable-on:hover {
+    border: 1px dashed #000000;
+}
+
+.website-breeze__upload-image-btn {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    border: 1px solid #FFFFFF;
+    color: #814646;
+    background: #FFFFFF;
+    padding: 10px 22px 10px 22px;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.website-breeze__upload-image-btn:hover {
+    border: 1px solid #814646;
+    color: #FFFFFF;
+    background: #814646;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+    .website-breeze__cover-link {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .website-breeze__menu-btn {
+        position: absolute;
+        z-index: 3;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 25px;
+        background: transparent;
+        border: 0px;
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+        display: flex;
+        align-items: center;
+    }
+
+    .website-breeze__menu-btn:after {
+        content: '';
+        display: flex;
+        min-width: 30px;
+        height: 2px;
+        position: absolute;
+        left: 0px;
+        background: #000000;
+    }
+
+    .website-breeze__close-menu-btn {
+        position: absolute;
+        z-index: 10;
+        top: 15px;
+        right: 15px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: 0px;
+    }
+
+    .website-breeze__close-menu-btn:before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 30px;
+        background: #814646;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto auto;
+        transform: rotate(45deg);
+    }
+
+    .website-breeze__close-menu-btn:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: #814646;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto auto;
+        transform: rotate(45deg);
+    }
+
+    .website-breeze__cover-menu {
+        background: #FFFFFF;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        padding-left: 35px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        z-index: 4;
+        display: none;
+    }
+
+    .website-breeze__cover-menu_open {
+        display: block;
+    }
+
+    .website-breeze__cover-link a {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        display: inline-block;
+        color: #814646;
+    }
+
+    .website-breeze__cover-link a:hover {
+        color: #814646;
+    }
+
+    .website-breeze__cover-rsvp-btn {
+        padding: 8px 20px 8px 20px;
+        margin-top: 5px;
+        display: inline-block;
+        color: #814646;
+        border-color: #814646;
+    }
+
+    .website-breeze__cover-rsvp-btn:hover,
+    .website-breeze__cover-rsvp-btn:focus {
+        background: #814646;
+    }
+
+    .website-breeze__date {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .website-breeze__date:before {
+        width: 20px;
+        left: -20px;
+    }
+
+    .website-breeze__date:after {
+        width: 20px;
+        right: -20px;
+    }
+
+    .website-breeze__cover-h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .website-breeze__h1 {
+        font-size: 26px;
+    }
+
+    .website-breeze__two-in-row {
+        flex-wrap: wrap;
+    }
+
+    .website-breeze__two-in-row-column {
+        width: 100%
+    }
+
+    .website-breeze__vertical-centred {
+        padding-bottom: 0px;
+    }
+
+    .website-breeze__move-up {
+        order: -1
+    }
+
+    .website-breeze__section-h2 {
+        font-size: 19px;
+    }
+
+    .website-breeze__section-h3 {
+        font-size: 22px;
+        padding: 1px 4px 1px 4px;
+        margin-bottom: 0px;
+    }
+
+    .website-breeze__section-rsvp {
+        padding: 8px 19px 8px 19px;
+        margin-top: 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .website-breeze__section-date {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .website-breeze__section-time {
+        font-size: 19px;
+    }
+
+    .website-breeze__section-location {
+        font-size: 14px;
+    }
+
+    .website-breeze__section-map-link {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .website-breeze__story {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 0px;
+    }
+
+    .website-breeze__rsv-final {
+        font-size: 18px;
+    }
+
+    .website-breeze__rsvp-relatives {
+        font-size: 19px;
+        line-height: 32px;
+    }
+
+    .website-breeze__rsvp-form-label {
+        font-size: 14px;
+    }
+
+    .website-breeze__rsvp-form-radio {
+        font-size: 14px;
+    }
+
+    .website-breeze__made-with {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .website-breeze__cover-link {
+        font-size: 13px;
+    }
+
+    .website-breeze__cover-rsvp-btn {
+        padding: 10px 22px 10px 22px;
+    }
+
+    .website-breeze__date {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .website-breeze__cover-h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .website-breeze__h1 {
+        font-size: 36px;
+    }
+
+    .website-breeze__section-h2 {
+        font-size: 22px;
+    }
+
+    .website-breeze__section-h3 {
+        font-size: 28px;
+        padding: 1px 4px 1px 4px;
+    }
+
+    .website-breeze__section-rsvp {
+        padding: 8px 19px 8px 19px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .website-breeze__section-date {
+        font-size: 17px;
+        margin-top: 0px;
+    }
+
+    .website-breeze__section-time {
+        font-size: 20px;
+    }
+
+    .website-breeze__story {
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: 0px;
+    }
+
+    .website-breeze__made-with {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .website-breeze__date {
+        font-size: 28px;
+    }
+
+    .website-breeze__cover-h2 {
+        font-size: 22px;
+    }
+
+    .website-breeze__h1 {
+        font-size: 42px;
+    }
+
+    .website-breeze__section-h2 {
+        font-size: 27px;
+    }
+
+    .website-breeze__section-h3 {
+        font-size: 32px;
+    }
+
+    .website-breeze__section-date {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    .website-breeze__section-time {
+        font-size: 23px;
+    }
+
+    .website-breeze__story {
+        font-size: 18px;
+        line-height: 31px;
+        margin-top: 0px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .website-breeze__date {
+        font-size: 31px;
+    }
+
+    .website-breeze__cover-h2 {
+        font-size: 24px;
+    }
+
+    .website-breeze__h1 {
+        font-size: 50px;
+    }
+
+}
