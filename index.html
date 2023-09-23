@@ -21,38 +21,27 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" id="nav-welcome" href="#welcome">Boda de Ana & Jaime</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  style="background-color: hwb(213 3% 75% / 0.871);">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+            </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item my-0">
                     <a class="nav-link" id="nav-details-link" href="#details">Boda</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item my-0">
                     <a class="nav-link" id="nav-photo-link" href="#foto">Subir una foto</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-rsvp-link" href="#rsvp">Asistencia</a>
+                <li class="nav-item my-0">
+                    <a class="nav-link" id="nav-rsvp-link" href="#rsvp1">Asistencia</a>
                 </li>
                 <li class="nav-item">
-                    <button class="language-button" id="language-toggle">🇨🇴🇨🇱</button>
+                    <button class="language-button my-2" id="language-toggle">🇨🇴🇨🇱</button>
                 </li>
-                <!-- Language Selector inside the navbar -->
-                <!-- <li class="nav-item dropdown">
-                    <div class="nav-link dropdown-toggle" id="languageDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="language-flag-circle">
-                            <span id="selectedFlag" class="language-flag">🇨🇴🇨🇱</span>
-                        </span>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <button class="dropdown-item" type="button" onclick="switchLanguage('fr')">🇫🇷</button>
-                        <button class="dropdown-item" type="button" onclick="switchLanguage('es')">🇨🇴🇨🇱</button>
-                    </div>
-                </li> -->
             </ul>
         </div>
     </nav>
@@ -62,7 +51,7 @@
         <div class="container welcome-section">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 id="couple-date">27 octobre 2023</h2>
+                    <h2 id="couple-date">27 octubre 2023</h2>
                     <span id="couple-names-span"></span>
                     <div id="couple-names">¡Nos vamos a casar!<br></div>
                     <br>
@@ -74,9 +63,9 @@
     </section>
 
     <!-- Wedding Details Section -->
-    <section id="details" class="page-section card-with-bg m-0 pb-0 section">
+    <section id="details" class="page-section section">
         <div class="container">
-            <div class="row mt-4">
+            <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 id="details-title">Boda</h2>
                 </div>
@@ -88,14 +77,24 @@
                 <div class="col-md-6 custom-content">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="card-title" id="ceremony-title">Ceremonia</h1>
+                            <h1 class="card-title" id="ceremony-title" style="font-family:'Dancing Script', cursive">Ceremonia</h1>
                             <p class="card-text" id="ceremony-date">27 octubre 2023</p>
                             <p class="card-text" id="ceremony-hour">10:00 am</p>
-                            <p class="card-text" id="ceremony-location">Place Broglie, 67000 Strasbourg, Francia</p>
+                            <p class="card-text mb-4" id="ceremony-location">Place Broglie, 67000 Strasbourg, Francia</p>
+                            <a class="nav-link2" id="ceremony-map" href="https://www.google.com/maps?q=48.585063,7.750266" target="_blank">Ver mapa</a>
                             <br>
-                            <a class="nav-link" id="ceremony-map" href="">Ver mapa</a>
-                            <a class="nav-link" id="ceremony-calendar" href="">Agendar en calendario</a>
-                            <a href="#rsvp" class="btn btn-primary">RSVP</a>
+                            <a class="nav-link2" id="ceremony-calendar" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR
+                            VERSION:2.0
+                            BEGIN:VEVENT
+                            SUMMARY:Your Wedding Event
+                            LOCATION:Wedding france
+                            DESCRIPTION:Your wedding description here.
+                            DTSTART:20231015T140000Z
+                            DTEND:20231015T160000Z
+                            END:VEVENT
+                            END:VCALENDAR" download="event.ics">Agendar en calendario</a>
+                            <br>
+                            <a href="#rsvp" class="btn btn-primary mt-4">RSVP</a>
                         </div>
                     </div>
                 </div>
@@ -104,14 +103,15 @@
                 <div class="col-md-6 custom-content">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="card-title" id="reception-title">Recepción</h1>
+                            <h1 class="card-title" id="reception-title" style="font-family:'Dancing Script', cursive">Recepción</h1>
                             <p class="card-text" id="event-date">27 octubre 2023</p>
                             <p class="card-text" id="reception-hour">12:00 am</p>
-                            <p class="card-text" id="reception-location">67500 Haguenau, Francia</p>
+                            <p class="card-text mb-4" id="reception-location">67500 Haguenau, Francia</p>
+                            <a class="nav-link2" id="event-map" href="https://www.google.com/maps?q=48.585063,7.750266" target="_blank">Ver mapa</a>
                             <br>
-                            <a class="nav-link" id="event-map" href="">Ver mapa</a>
-                            <a class="nav-link" id="event-calendar" href="">Agendar en calendario</a>
-                            <a href="#rsvp" class="btn btn-primary">RSVP</a>
+                            <a class="nav-link2" id="event-calendar" href="">Agendar en calendario</a>
+                            <br>
+                            <a href="#rsvp" class="btn btn-primary mt-4">RSVP</a>
                         </div>
                     </div>
                 </div>
@@ -172,10 +172,10 @@
         </div> -->
     </section>
 
-    <!-- RSVP Section -->
+    <!-- Photo Section -->
     <section id="foto" class="page-section section">
         <div class="container">
-            <div class="row mt-4">
+            <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 id="photo-title">Subir una foto</h2>
                 </div>
@@ -202,11 +202,11 @@
     </section>
 
     <!-- RSVP Section -->
-    <section id="rsvp" class="page-section section">
-        <div class="container-fluid mx-5 px-5">
-            <div class="row mt-4">
+    <section id="rsvp1" class="page-section section">
+        <div class="container mx-5 px-5">
+            <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 id="photo-title">Asistencia</h2>
+                    <h2 id="rsvp-title">Asistencia</h2>
                 </div>
             </div>
 

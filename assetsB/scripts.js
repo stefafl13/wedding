@@ -89,30 +89,35 @@ const flagCircle = document.querySelector('.language-flag-circle')
 
 // Function to change navbar text color based on section
 function setNavbarTextColor(sectionId) {
+    const bodyElement = document.body;
     if (sectionId === 'welcome') {
         // If in the welcome section, set text color to white
         navbarLinks.forEach((link) => {
             link.style.color = '#fff';
         });
         brandLink.style.color = '#fff';
-        flagCircle.style.backgroundColor = '#fff';
+        bodyElement.style.backgroundImage = "url('images/blueGradient2.jpeg')"; 
     } else {
         // If in other sections, set text color to blue
-        navbarLinks.forEach((link) => {
-            link.style.color = '#07203e'; // Change this to your desired blue color
-        });
+        if (window.innerWidth > 991) {
+            navbarLinks.forEach((link) => {
+                link.style.color = '#07203e'; // Change this to your desired blue color
+            });
+        } else {
+            navbarLinks.forEach((link) => {
+                link.style.color = '#fff';
+            });
+        }
         brandLink.style.color = '#07203e';
-        flagCircle.style.backgroundColor = '#07203e';
+        bodyElement.style.backgroundImage = "url('images/weddingBackground.jpeg')"; 
     }
 }
 
 // Function to observe section visibility
 function observeSections() {
-    const sections = document.querySelectorAll('section[id]');
+    const sections = document.querySelectorAll('.section[id]');
     const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.9, // Adjust this threshold as needed
+        threshold: 0.5, // Adjust the threshold as needed
     };
 
     const observer = new IntersectionObserver((entries) => {

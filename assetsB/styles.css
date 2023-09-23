@@ -37,11 +37,10 @@ body, h1, h2, p, .btn {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
 }
 
 /* Background image for the Welcome section */
-#welcome {
+body {
     background-image: url('./../images/blueGradient2.jpeg'); /* Replace with your welcome image path */
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,9 +59,11 @@ body, h1, h2, p, .btn {
     font-size: 2em;
 }
 
-#details-title, #photo-title {
+#details-title, #photo-title, #rsvp-title {
     font-weight: bold;
     color: #07203e;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
 }
 
 #couple-names-span{
@@ -103,7 +104,6 @@ body, h1, h2, p, .btn {
 }
 
 .custom-row {
-    min-height: 35vh; /* Adjust the minimum height as needed */
     display: flex;
     align-items: stretch; /* Stretch child elements to cover the entire height */
 }
@@ -196,7 +196,7 @@ legend {
         top: 100%;
         right: 0;
         left: unset !important;
-        background-color: #9c62d6; /* Customize background color as needed */
+        background-color: #07203e; /* Customize background color as needed */
         text-align: center; /* Center menu items */
         z-index: 1; /* Ensure menu is on top of other content */
         border: 1px solid transparent;
@@ -207,4 +207,10 @@ legend {
 #language-toggle {
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.nav-link2 {
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    color: #07203e;
 }
