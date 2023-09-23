@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John & Jane's Wedding</title>
-    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <!-- Link to Fira Sans font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <!-- Link to Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,28 +17,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" id="nav-welcome" href="#">Boda de Ana & Jaime</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-details-link" href="#details">Details</a>
+                    <a class="nav-link" id="nav-details-link" href="#details">Boda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="nav-photo-link" href="#foto">Subir una foto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-rsvp-link" href="#rsvp">RSVP</a>
+                    <a class="nav-link" id="nav-rsvp-link" href="#rsvp">Asistencia</a>
                 </li>
                 <!-- Language Selector inside the navbar -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="language-flag-circle">
                             <span id="selectedFlag" class="language-flag">🇨🇴🇨🇱</span>
                         </span>
@@ -51,39 +56,144 @@
     </nav>
 
     <!-- Welcome Section (Names Only) -->
-    <section id="welcome" class="page-section">
-        <h2 id="couple-date">27 octobre 2023</h2>
-        <span id="couple-names-span"></span>
-        <div id="couple-names">¡Nos vamos a casar!<br></div>
-        <br>
-        <br>
-        <h1 id="welcome-title">Ana & Jaime</h1>
+    <section id="welcome" class="page-section d-flex flex-column justify-content-between">
+        <div class="container welcome-section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 id="couple-date">27 octobre 2023</h2>
+                    <span id="couple-names-span"></span>
+                    <div id="couple-names">¡Nos vamos a casar!<br></div>
+                    <br>
+                    <br>
+                    <h1 id="welcome-title">Ana & Jaime</h1>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Wedding Details Section -->
-    <section id="details" class="page-section card-with-bg">
-        <div class="card-body">
-            <!-- Insert the image before the card title -->
-            <img src="wedding-ring-icon.png" alt="Wedding Ring" class="img-fluid" style="max-width: 50px; margin-bottom: 10px;">
-            <h1 class="card-title" id="details-title">Wedding Details</h1>
-            <!-- Add wedding details here -->
-            <p class="card-text" id="event-date">Saturday, October 15, 2023</p>
-            <p class="card-text" id="event-location">Central Park, New York City</p>
-            <a href="#rsvp" class="btn btn-primary">RSVP</a>
+    <section id="details" class="page-section card-with-bg m-0 pb-0">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <h2 id="details-title">Boda</h2>
+                </div>
+            </div>
+            <div class="row mt-4 custom-row">
+                <div class="col-md-6">
+                    <img src="images/wedding1.jpeg" alt="Wedding Location Image" class="img-fluid cover-image">
+                </div>
+                <div class="col-md-6 custom-content">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title" id="ceremony-title">Ceremonia</h1>
+                            <p class="card-text" id="ceremony-date">27 octubre 2023</p>
+                            <p class="card-text" id="ceremony-hour">10:00 am</p>
+                            <p class="card-text" id="ceremony-location">Place Broglie, 67000 Strasbourg, Francia</p>
+                            <br>
+                            <a class="nav-link" id="ceremony-map" href="">Ver mapa</a>
+                            <a class="nav-link" id="ceremony-calendar" href="">Agendar en calendario</a>
+                            <a href="#rsvp" class="btn btn-primary">RSVP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 custom-row">
+                <div class="col-md-6 custom-content">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title" id="reception-title">Recepción</h1>
+                            <p class="card-text" id="event-date">27 octubre 2023</p>
+                            <p class="card-text" id="reception-hour">12:00 am</p>
+                            <p class="card-text" id="reception-location">67500 Haguenau, Francia</p>
+                            <br>
+                            <a class="nav-link" id="event-map" href="">Ver mapa</a>
+                            <a class="nav-link" id="event-calendar" href="">Agendar en calendario</a>
+                            <a href="#rsvp" class="btn btn-primary">RSVP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/wedding1.jpeg" alt="Wedding Location Image" class="img-fluid cover-image">
+                </div>
+            </div>
         </div>
+<!--         <div class="container-fluid px-5 mb-1 mx-5">
+            <div class="row mb-4">
+                <div id="details-title">Boda</div>
+            </div>
+                            <h1 class="card-title" id="reception-title">Recepción</h1>
+                            <p class="card-text" id="reception-date">27 octubre 2023</p>
+                            <p class="card-text" id="reception-hour">12:00 am</p>
+                            <p class="card-text" id="reception-location">67500 Haguenau, Francia</p>
+                            <br>
+                            <a class="nav-link" id="reception-map" href="">Ver mapa</a>
+                            <a class="nav-link" id="reception-calendar" href="">Agendar en calendario</a>
+                            <a href="#rsvp" class="btn btn-primary">RSVP</a>
+                        </div>
+        </div> -->
+<!--         <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-7 text-center d-flex justify-content-right align-items-right">
+                    <div class="card" style="width: 60%;">
+                        <img src="images/wedding1.jpeg" class="card-img" alt="Image">
+                        <div class="card-img-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h1 class="card-title" id="details-title">Wedding Details</h1>
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text" id="event-date">Saturday, October 15, 2023</p>
+                        <p class="card-text" id="event-location">Central Park, New York City</p>
+                        <a href="#rsvp" class="btn btn-primary">RSVP</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+<!--         <div class="row mb-2">
+            <div class="col-md-6" style="justify-content: center;">
+                <div class="card" style="width: 60%;">
+                    <img src="images/wedding1.jpeg" class="card-img" alt="Image">
+                    <div class="card-img-overlay"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h1 class="card-title" id="details-title">Wedding Details</h1>
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text" id="event-date">Saturday, October 15, 2023</p>
+                    <p class="card-text" id="event-location">Central Park, New York City</p>
+                    <a href="#rsvp" class="btn btn-primary">RSVP</a>
+                </div>
+            </div>
+        </div> -->
     </section>
 
     <!-- RSVP Section -->
     <section id="foto" class="page-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">Subir una foto</h2>
-                            <!-- Add RSVP form here -->
-                        </div>
-                    </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <h2 id="photo-title">Subir una foto</h2>
+                </div>
+            </div>
+
+            <!-- Explanation Text -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p id="share-message">¡Hagamos felices a los novios! Llena un álbum de fotos durante el día de la boda o después. Por favor, utiliza el hashtag cuando publiques fotos en las redes sociales</p><b id="hashtag">#AllYouNeedIsLove</b>
+                </div>
+            </div>
+            <div class="row mt-4 custom-row upload-box rounded-lg">
+                <div class="col-md-4">
+                    <img src="images/frame2.png" alt="Wedding photo QR" class="img-fluid cover-image">
+                </div>
+                <div class="col-md-8 custom-content qr-box">
+                    <p class="card-text" id="qr-information">Utiliza este código QR para dirigirte a un formulario donde podras subir tus fotos y compartir un momento. Apunta la cámara del teléfono al código QR y sigue el enlace.Cada invitado puede hacer una foto y luego subir las fotos durante el día de la boda o más tarde.</p>
+                    <br>
+                    <p><b id="photo-limit">El límite es 10 fotografías por formulario.</b></p>
+                    <p id="size-limit">Se puede ingresar al formulario cuantas veces desees. Las fotos no deben exceder los 100MB.</p>
                 </div>
             </div>
         </div>
@@ -91,26 +201,90 @@
 
     <!-- RSVP Section -->
     <section id="rsvp" class="page-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">RSVP</h2>
-                            <!-- Add RSVP form here -->
+        <div class="container-fluid mx-5 px-5">
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <h2 id="photo-title">Asistencia</h2>
+                </div>
+            </div>
+
+            <!-- Explanation Text -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p id="rsvp-message">Estamos felices de celebrar contigo este día tan especial, por favor confirma tu asistencia antes del 6 de octubre 2023.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-6 text-right">
+                            <img src="images/frame2.png" alt="Wedding photo QR" class="img-fluid cover-image">
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <form id="rsvp-form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-5">
+                                        <label for="guest_name" id="label_name">Nombre *</label>
+                                        <input type="text" class="form-control" id="guest_name" name="guest_name" required>
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <label for="guest_lastname" id="label_lastname">Apellido *</label>
+                                        <input type="text" class="form-control" id="guest_lastname" name="guest_lastname" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="guest_email" id="label_email">Email *</label>
+                                        <input type="email" class="form-control" id="guest_email" name="guest_email" required>
+                                    </div>
+                                    <div class="form-group col-md-4 text-left px-2">
+                                        <legend class="col-form-label" id="attendance">¿Estarás presente? *</legend>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="attending_yes" name="guest_attendance" value="Si" required>
+                                            <label class="form-check-label" for="attending_yes" id="label_yes">Si</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="attending_no" name="guest_attendance" value="No" required>
+                                            <label class="form-check-label" for="attending_no" id="label_no">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-10">
+                                        <label for="guest_comment" id="comments">Comentarios o preguntas</label>
+                                        <textarea class="form-control" id="guest_comment" name="guest_comment" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-row text-center">
+                                    <div class="form-group col-md-10">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="send-button">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Custom-styled alert container -->
+            <div id="custom-alert" class="custom-alert"></div>
         </div>
     </section>
 
     <!-- Link to the external JavaScript file -->
     <script src="assetsB/scripts.js"></script>
 
+    <!-- Add Font Awesome library for the cloud upload icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
     <!-- Link to Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.min.js"></script>
+
 </body>
+
 </html>

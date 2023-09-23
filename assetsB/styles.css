@@ -23,9 +23,10 @@ body, h1, h2, p, .btn {
     font-family: 'Fira Sans', sans-serif;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link, .navbar-brand {
     color: #fff;
     font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
 }
 
 /* Style for the section transitions */
@@ -54,9 +55,14 @@ body, h1, h2, p, .btn {
     font-weight: bold;
 }
 
-#couple-names, #couple-date {
+#couple-names, #couple-date, #details-title, #photo-title {
     font-family: 'Fira Sans', sans-serif;
     font-size: 2em;
+}
+
+#details-title, #photo-title {
+    font-weight: bold;
+    color: #07203e;
 }
 
 #couple-names-span{
@@ -67,17 +73,116 @@ body, h1, h2, p, .btn {
     margin-top: 1em; /* Add margin to space it from the title */
 }
 
-language-flag-circle {
+.language-flag-circle {
     display: inline-block;
-    width: 30px; /* Adjust the width of the circle */
-    height: 30px; /* Adjust the height of the circle */
+    width: 3em; /* Adjust the width of the circle */
+    height: 2em; /* Adjust the height of the circle */
     border-radius: 50%; /* Create a circular shape */
-    background-color: #333; /* Set the background color of the circle */
+    background-color: #ffffff; /* Set the background color of the circle */
     text-align: center;
     line-height: 30px; /* Vertically center the flag emoji */
 }
 
 .language-flag {
-    font-size: 20px; /* Adjust the font size of the flag emoji */
+    font-size: 1.2em; /* Adjust the font size of the flag emoji */
     color: #fff; /* Set the color of the flag emoji */
+}
+
+.purple-icon {
+    background-image: url('./../images/pen1.webp'); /* Replace with your welcome image path */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.welcome-section {
+    margin-top: 15em;
+}
+
+#details {
+    color: #07203e;
+}
+
+.custom-row {
+    min-height: 35vh; /* Adjust the minimum height as needed */
+    display: flex;
+    align-items: stretch; /* Stretch child elements to cover the entire height */
+}
+
+.custom-row {
+    min-height:30vh; /* Adjust the percentage of the viewport height as needed */
+}
+
+.cover-image {
+    height: 100%; /* Set the image height to cover the entire column */
+    object-fit: cover; /* Ensure the image covers the column while maintaining aspect ratio */
+}
+
+.card {
+    height: 100%; /* Set the card height to cover the entire column */
+}
+
+.qr-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-box {
+    border: 0.2em dashed #6aa5d8; /* Add a dashed border with a color of your choice */
+    padding: 20px; /* Add padding for spacing */
+    background-color: hsla(208, 59%, 63%, 0.172);
+}
+
+#hashtag {
+    color: #07203e;
+}
+
+#rsvp-form label, legend {
+    font-weight: bold;
+    color: #07203e;
+}
+
+legend {
+    display: inline;
+}
+
+/* Custom CSS for form field styling */
+.form-control {
+    background-color: hsla(208, 59%, 63%, 0.172); /* Set your desired background color */
+    border: 2px solid #6aa5d8; /* Set your desired border color and width */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Custom CSS for radio buttons */
+.form-check-input[type="radio"] {
+    width: 20px; /* Set the width of the radio button */
+    height: 20px; /* Set the height of the radio button */
+    margin-right: 5px; /* Add spacing between the radio button and label */
+}
+
+#send-button {
+    font-weight: bold;
+    background-color: #07203e;
+}
+
+/* Custom CSS for custom-styled alert */
+.custom-alert {
+    display: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.custom-alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.custom-alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
 }
