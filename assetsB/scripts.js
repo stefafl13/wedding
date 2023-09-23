@@ -179,3 +179,28 @@ function showCustomAlert(message, className) {
         clearForm();
     }, 2000);
 }
+
+// JavaScript to handle section visibility
+const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const targetSectionId = link.getAttribute("href").substring(1); // Remove "#" from href
+        toggleSections(targetSectionId);
+    });
+});
+
+function toggleSections(targetSectionId) {
+    sections.forEach((section) => {
+        if (section.id === targetSectionId) {
+            section.style.display = "block"; // Show the target section
+        } else {
+            section.style.display = "none"; // Hide other sections
+        }
+    });
+}
+
+// Initially, show the welcome section and hide others
+toggleSections("welcome");
