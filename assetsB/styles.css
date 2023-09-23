@@ -186,3 +186,25 @@ legend {
     border-color: #ebccd1;
     color: #a94442;
 }
+
+/* Custom CSS to adjust menu items placement */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        width:auto;
+        padding: 1em;
+        top: 100%;
+        right: 0;
+        left: unset !important;
+        background-color: #9c62d6; /* Customize background color as needed */
+        text-align: center; /* Center menu items */
+        z-index: 1; /* Ensure menu is on top of other content */
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+}
+
+#language-toggle {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}

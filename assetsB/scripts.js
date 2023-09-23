@@ -64,9 +64,24 @@ function switchLanguage(language, flag) {
     }
 
     // Update the selected language and flag
-    document.getElementById('selectedFlag').textContent = language === 'fr' ? '🇫🇷' : '🇨🇴🇨🇱';
+    document.getElementById('language-toggle').textContent = language === 'fr' ? '🇫🇷' : '🇨🇴🇨🇱';
 }
 
+// JavaScript to toggle between languages
+const languageButton = document.getElementById('language-toggle');
+let currentLanguage = 'es'; // Initial language
+
+languageButton.addEventListener('click', () => {
+    // Toggle between languages
+    currentLanguage = currentLanguage === 'es' ? 'fr' : 'es';
+    if (window.innerWidth < 991) {
+        mobileMenuToggle.click();
+    }
+    
+    // You can perform actions based on the selected language here
+    // For example, change text content, update elements, etc.
+    switchLanguage(currentLanguage);
+});
 // Get all navbar links
 const navbarLinks = document.querySelectorAll('.nav-link');
 const brandLink = document.querySelector('.navbar-brand');
@@ -183,12 +198,16 @@ function showCustomAlert(message, className) {
 // JavaScript to handle section visibility
 const sections = document.querySelectorAll(".section");
 const navLinks = document.querySelectorAll("nav a");
+const mobileMenuToggle = document.querySelector(".navbar-toggler");
 
 navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
         event.preventDefault();
         const targetSectionId = link.getAttribute("href").substring(1); // Remove "#" from href
         toggleSections(targetSectionId);
+        if (targetSectionId !== "welcome" && window.innerWidth < 991) {
+            mobileMenuToggle.click();
+        }
     });
 });
 
