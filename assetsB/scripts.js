@@ -117,7 +117,7 @@ function setNavbarTextColor(sectionId) {
 function observeSections() {
     const sections = document.querySelectorAll('.section[id]');
     const observerOptions = {
-        threshold: 0.5, // Adjust the threshold as needed
+        threshold: 0.2, // Adjust the threshold as needed
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -138,7 +138,7 @@ function observeSections() {
 observeSections();
 
 // Initialize Email.js with your custom email service
-emailjs.init("BaxuDRIAZV7sbgNT8"); // Replace with your Email.js API key
+emailjs.init("M_564O6aW_AC0xf8H"); // Replace with your Email.js API key
 
 // Handle form submission
 document.getElementById("rsvp-form").addEventListener("submit", function (event) {
@@ -162,7 +162,7 @@ document.getElementById("rsvp-form").addEventListener("submit", function (event)
     `;
 
     // Send the email using your custom email service and template
-    emailjs.send("service_a2f5z89", "template_t5b9elo", {
+    emailjs.send("service_l4wjy8s", "template_hsmjjod", {
         message: emailContent,
     })
     .then(function(response) {
