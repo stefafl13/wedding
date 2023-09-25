@@ -220,7 +220,7 @@ function showCustomAlert(message, className) {
 
 // JavaScript to handle section visibility
 const sections = document.querySelectorAll(".section");
-const navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("nav a, .details-rsvps");
 const mobileMenuToggle = document.querySelector(".navbar-toggler");
 
 navLinks.forEach((link) => {
