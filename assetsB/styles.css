@@ -104,17 +104,14 @@ body {
 }
 
 .custom-row {
+    min-height:30vh; /* Adjust the percentage of the viewport height as needed */
     display: flex;
     align-items: stretch; /* Stretch child elements to cover the entire height */
 }
 
-.custom-row {
-    min-height:30vh; /* Adjust the percentage of the viewport height as needed */
-}
-
 .cover-image {
-    height: 100%; /* Set the image height to cover the entire column */
-    object-fit: cover; /* Ensure the image covers the column while maintaining aspect ratio */
+    width: 100%; /* Set the image height to cover the entire column */
+    height: auto;
 }
 
 .card {
@@ -161,7 +158,7 @@ legend {
     margin-right: 5px; /* Add spacing between the radio button and label */
 }
 
-#send-button {
+.btn-primary {
     font-weight: bold;
     background-color: #07203e;
 }
@@ -209,8 +206,16 @@ legend {
     border-radius: 4px;
 }
 
-.nav-link2 {
+.nav-link2, #PD-message {
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
     color: #07203e;
+}
+
+.custom-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
