@@ -199,6 +199,18 @@ legend {
         border: 1px solid transparent;
         border-radius: 4px;
     }
+
+    #Fiesta2, #reception-title {
+        margin-top: 1em;
+    }
+
+    .some-image {
+        display: none !important;
+    }
+
+    .some-row, #Fiesta5 {
+        margin-bottom: 0% !important;
+    }
 }
 
 #language-toggle {

@@ -32,10 +32,11 @@ function switchLanguage(language, flag) {
         document.getElementById('send-button').textContent = 'Soumettre';
         document.getElementById('details-rsvp').textContent = 'RSVP';
         document.getElementById('details2-rsvp').textContent = 'RSVP';
-        document.getElementById('Fiesta1').textContent = "La fête aura lieu dans une maison à la campagne. Il y a de l’espace disponible pour dormir sur place si tu le souhaites, juste pense à ramener ton sac de couchage!";
+        document.getElementById('Fiesta1').textContent = "La fête aura lieu dans une maison à la campagne.";
+        document.getElementById('Fiesta5').textContent = 'Il y a de l’espace disponible pour dormir sur place si tu le souhaites, juste pense à ramener ton sac de couchage!';
         document.getElementById('Fiesta2').textContent = "La célébration aura une dynamique de partage, donc, fais ton meilleur plat et ramène-le avec ta boisson préférée. L’idée, c'est d’avoir de la variété avec l'apport de chacun.";
         document.getElementById('Fiesta3').textContent = "Il y aura de la musique en Live et de la place, donc si tu veux jouer un instrument, chanter, danser ou autre, tu es le bienvenu.";
-        document.getElementById('Fiesta4').textContent = "Nous ne voulons imposer aucun code vestimentaire, viens comme tu le sens, juste pense à te doucher quand même! &#x1F60A";
+        document.getElementById('Fiesta4').textContent = "Nous ne voulons imposer aucun code vestimentaire, viens comme tu le sens, juste pense à te doucher quand même! 😊";
         document.getElementById('PD-message').textContent = "PS: Tenue en blanche interdite.";
     } else if (language === 'es') {
         // Español
@@ -70,10 +71,11 @@ function switchLanguage(language, flag) {
         document.getElementById('send-button').textContent = 'Enviar';
         document.getElementById('details-rsvp').textContent = 'Confirmar asistencia';
         document.getElementById('details2-rsvp').textContent = 'Confirmar asistencia';
-        document.getElementById('Fiesta1').textContent = 'La fiesta se llevará a cabo en una casa campestre. Hay algunas habitaciones disponibles y espacios para dormir allí si lo deseas. Lleva tu propio saco de dormir en caso de que quieras continuar con nosotros el festejo hasta el amanecer.';
-        document.getElementById('Fiesta2').textContent = 'Nuestra celebración tendrá una dinámica de compartir, por favor prepara tu mejor platillo y traelo con la bebida que más te guste. En la variedad esta el placer!';
-        document.getElementById('Fiesta3').textContent = 'Habrá música en vivo y espacio, si deseas cantar, tocar algún instrumento, bailar u otros eres mas que bienvenido!';
-        document.getElementById('Fiesta4').textContent = 'No imponemos un código de vestimenta, solo venganse bonitos y gorditos muchachos &#x1F60A';
+        document.getElementById('Fiesta1').textContent = 'La fiesta se llevará a cabo en una casa campestre.';
+        document.getElementById('Fiesta5').textContent = 'Hay algunas habitaciones disponibles y espacios para dormir allí si lo deseas. Lleva tu propio saco de dormir en caso de que quieras continuar con nosotros el festejo hasta el amanecer.';
+        document.getElementById('Fiesta2').textContent = 'Nuestra celebración tendrá una dinámica de compartir, por favor prepara tu mejor platillo y tráelo con la bebida que más te guste. En la variedad está el placer!';
+        document.getElementById('Fiesta3').textContent = 'Habrá música en vivo y espacio, si deseas cantar, tocar algún instrumento, bailar u otros eres más que bienvenido!';
+        document.getElementById('Fiesta4').textContent = 'No imponemos un código de vestimenta, solo vénganse bonitos y gorditos muchachos 😊';
         document.getElementById('PD-message').textContent = 'Pd: Por favor NO venir de blanco.';
     }
 
