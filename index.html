@@ -19,215 +19,224 @@
 </head>
 
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" id="nav-welcome" href="#welcome">Boda de Ana & Jaime</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  style="background-color: hwb(213 3% 75% / 0.871);">
-            <span class="navbar-toggler-icon">
-                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item my-0">
-                    <a class="nav-link" id="nav-details-link" href="#details">Boda</a>
-                </li>
-                <li class="nav-item my-0">
-                    <a class="nav-link" id="nav-photo-link" href="#foto">Subir una foto</a>
-                </li>
-                <li class="nav-item my-0">
-                    <a class="nav-link" id="nav-rsvp-link" href="#rsvp1">Asistencia</a>
-                </li>
-                <li class="nav-item">
-                    <button class="language-button my-2" id="language-toggle">🇨🇴🇨🇱</button>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Welcome Section (Names Only) -->
-    <section id="welcome" class="page-section section">
-        <div class="container welcome-section">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 id="couple-date">27 octubre 2023</h2>
-                    <span id="couple-names-span"></span>
-                    <div id="couple-names">¡Nos vamos a casar!<br></div>
-                    <br>
-                    <br>
-                    <h1 id="welcome-title">Ana & Jaime</h1>
-                </div>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" id="nav-welcome" href="#welcome">Boda de Ana & Jaime</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  style="background-color: hwb(213 3% 75% / 0.871);">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item my-0">
+                        <a class="nav-link" id="nav-details-link" href="#details">Boda</a>
+                    </li>
+                    <li class="nav-item my-0">
+                        <a class="nav-link" id="nav-photo-link" href="#foto">Subir una foto</a>
+                    </li>
+                    <li class="nav-item my-0">
+                        <a class="nav-link" id="nav-rsvp-link" href="#rsvp1">Asistencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="language-button my-2" id="language-toggle">🇨🇴🇨🇱</button>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Wedding Details Section -->
-    <section id="details" class="page-section section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 id="details-title">Boda</h2>
+        </nav>
+    </header>
+    <main class="centered-section">
+        <!-- Welcome Section (Names Only) -->
+        <section id="welcome" class="page-section section">
+            <div class="container welcome-section">
+                <div class="row custom-row my-4">
+                    <div class="col-md-12">
+                        <img src="images/AnaCel6.png" alt="Welcome" class="img-fluid">
+                    </div>
                 </div>
-            </div>
-            <div class="row align-items-stretch mt-4 custom-row">
-                <div class="col-lg-6 d-flex align-items-center">
-                    <img src="images/AnaCel3.jpg" alt="Wedding Location Image" class="img-fluid cover-image">
-                </div>
-                <div class="col-lg-6">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h1 class="card-title" id="ceremony-title" style="font-family:'Dancing Script', cursive">Ceremonia</h1>
-                            <p class="card-text" id="ceremony-date">27 octubre 2023</p>
-                            <p class="card-text" id="ceremony-hour">10:00 am</p>
-                            <p class="card-text mb-4" id="ceremony-location">l'Hôtel de Ville, Salle des Mariages, place Broglie, Francia</p>
-                            <a class="nav-link2" id="ceremony-map" href="https://maps.app.goo.gl/Hz5muupLu64WRVY37" target="_blank">Ver mapa</a>
-                            <a class="nav-link2" id="ceremony-calendar" href="wedding.ics" download="wedding2.ics">Agendar en calendario</a>
-                            <a href="#rsvp1" class="btn btn-primary mt-4" id="details-rsvp">Confirmar asistencia</a>
-                        </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 id="couple-date">27 octubre 2023</h2>
+                        <span id="couple-names-span"></span>
+                        <div id="couple-names">¡Nos vamos a casar!<br></div>
+                        <br>
+                        <br>
+                        <h1 id="welcome-title">Ana & Jaime</h1>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-stretch mt-4 custom-row mb-3">
-                <div class="col-md-12">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div class="row mb-4 align-items-stretch some-row">
-                                <div class="col-lg-6 order-lg-1 order-2 d-flex flex-column justify-content-between">
-                                    <h1 class="card-title" id="reception-title" style="font-family:'Dancing Script', cursive">Fiesta</h1>
-                                    <p class="card-text" id="event-date">27 octubre 2023</p>
-                                    <p class="card-text" id="reception-hour">12:00 pm</p>
-                                    <p class="card-text mb-4" id="reception-location">41 Rue de la Marseillaise 67250 Surbourg, Francia</p>
-                                    <p id="Fiesta1">La fiesta se llevará a cabo en una casa campestre.</p>
-                                    <p class="nav-link2">🌲 ~ 🌺 ~ 🌼 ~ 🌲</p>
-                                    <p class="px-2" id="Fiesta5">Hay algunas habitaciones disponibles y espacios para dormir allí si lo deseas. Lleva tu propio saco de dormir en caso de que quieras continuar con nosotros el festejo hasta el amanecer.</p>
-                                </div>
-                                <div class="col-lg-6 order-lg-2 order-1 d-flex align-items-center">
-                                    <img src="images/AnaCel1.jpg" alt="Wedding Location Image" class="img-fluid cover-image">
-                                </div>
-                            </div>
-                            <div class="row align-items-stretch">
-                                <div class="col-lg-6 d-flex align-items-center some-image">
-                                    <img src="images/AnaCel2.jpg" alt="Wedding Location Image" class="img-fluid cover-image">
-                                </div>
-                                <div class="col-lg-6 d-flex flex-column justify-content-between">
-                                    <p id="Fiesta2">Nuestra celebración tendrá una dinámica de compartir, por favor prepara tu mejor platillo y tráelo con la bebida que más te guste. En la variedad está el placer!</p>
-                                    <p id="Fiesta3">Habrá música en vivo y espacio, si deseas cantar, tocar algún instrumento, bailar u otros eres más que bienvenido!</p>
-                                    <p id="Fiesta4">No imponemos un código de vestimenta, solo vénganse bonitos y gorditos muchachos &#x1F60A</p>
-                                    <p><b id="PD-message">Pd: Por favor NO venir de blanco.</b></p>
-                                    <a class="nav-link2" id="event-map" href="https://maps.app.goo.gl/3fkYbBxBGmSTegHx9" target="_blank">Ver mapa</a>
-                                    <a class="nav-link2" id="event-calendar" href="weddingCelebration.ics" download="celebration.ics">Agendar en calendario</a>
-                                    <a href="#rsvp1" class="btn btn-primary mt-4" id="details2-rsvp">Confirmar asistencia</a>
-                                </div>
+        </section>
+    
+        <!-- Wedding Details Section -->
+        <section id="details" class="page-section section pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 id="details-title">Boda</h2>
+                    </div>
+                </div>
+                <div class="row align-items-stretch mt-4 custom-row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <img src="images/AnaCel3.jpg" alt="Wedding Location Image" class="img-fluid cover-image">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h1 class="card-title" id="ceremony-title" style="font-family:'Dancing Script', cursive">Ceremonia</h1>
+                                <p class="card-text" id="ceremony-date">27 octubre 2023</p>
+                                <p class="card-text" id="ceremony-hour">10:00 am</p>
+                                <p class="card-text mb-4" id="ceremony-location">l'Hôtel de Ville, Salle des Mariages, place Broglie, Francia</p>
+                                <a class="nav-link2" id="ceremony-map" href="https://maps.app.goo.gl/Hz5muupLu64WRVY37" target="_blank">Ver mapa</a>
+                                <a class="nav-link2" id="ceremony-calendar" href="wedding.ics" download="wedding2.ics">Agendar en calendario</a>
+                                <a href="#rsvp1" class="btn btn-primary mt-4" id="details-rsvp">Confirmar asistencia</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Photo Section -->
-    <section id="foto" class="page-section section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 id="photo-title">Subir una foto</h2>
-                </div>
-            </div>
-
-            <!-- Explanation Text -->
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <p id="share-message">¡Hagamos felices a los novios! Llena un álbum de fotos durante el día de la boda o después. Por favor, utiliza el hashtag cuando publiques fotos en las redes sociales</p><b id="hashtag">#AllYouNeedIsLove</b>
-                </div>
-            </div>
-            <div class="row mt-4 custom-row upload-box rounded-lg">
-                <div class="col-md-4">
-                    <img src="images/frame2.png" alt="Wedding photo QR" class="img-fluid cover-image">
-                </div>
-                <div class="col-md-8 qr-box">
-                    <p class="card-text" id="qr-information">Utiliza este código QR para dirigirte a un formulario donde podras subir tus fotos y compartir un momento. Apunta la cámara del teléfono al código QR y sigue el enlace.Cada invitado puede hacer una foto y luego subir las fotos durante el día de la boda o más tarde.</p>
-                    <br>
-                    <p><b id="photo-limit">El límite es 10 fotografías por formulario.</b></p>
-                    <p id="size-limit">Se puede ingresar al formulario cuantas veces desees. Las fotos no deben exceder los 100MB.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RSVP Section -->
-    <section id="rsvp1" class="page-section section">
-        <div class="container mx-5 px-5">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 id="rsvp-title">Asistencia</h2>
-                </div>
-            </div>
-
-            <!-- Explanation Text -->
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <p id="rsvp-message">Estamos felices de celebrar contigo este día tan especial, por favor confirma tu asistencia antes del 6 de octubre 2023.</p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-11">
-                    <div class="row">
-                        <div class="col-md-6 text-right">
-                            <img src="images/frame2.png" alt="Wedding photo QR" class="img-fluid cover-image">
-                        </div>
-                        <div class="col-md-6 text-left">
-                            <form id="rsvp-form">
-                                <div class="form-row">
-                                    <div class="form-group col-md-5">
-                                        <label for="guest_name" id="label_name">Nombre *</label>
-                                        <input type="text" class="form-control" id="guest_name" name="guest_name" required>
+                <div class="row align-items-stretch mt-4 custom-row mb-3">
+                    <div class="col-md-12">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="row mb-4 align-items-stretch some-row">
+                                    <div class="col-lg-6 order-lg-1 order-2 d-flex flex-column justify-content-between">
+                                        <h1 class="card-title" id="reception-title" style="font-family:'Dancing Script', cursive">Fiesta</h1>
+                                        <p class="card-text" id="event-date">27 octubre 2023</p>
+                                        <p class="card-text" id="reception-hour">12:00 pm</p>
+                                        <p class="card-text mb-4" id="reception-location">41 Rue de la Marseillaise 67250 Surbourg, Francia</p>
+                                        <p id="Fiesta1">La fiesta se llevará a cabo en una casa campestre.</p>
+                                        <p class="nav-link2">🌲 ~ 🌺 ~ 🌼 ~ 🌲</p>
+                                        <p class="px-2" id="Fiesta5">Hay algunas habitaciones disponibles y espacios para dormir allí si lo deseas. Lleva tu propio saco de dormir en caso de que quieras continuar con nosotros el festejo hasta el amanecer.</p>
                                     </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="guest_lastname" id="label_lastname">Apellido *</label>
-                                        <input type="text" class="form-control" id="guest_lastname" name="guest_lastname" required>
+                                    <div class="col-lg-6 order-lg-2 order-1 d-flex align-items-center">
+                                        <img src="images/AnaCel1.jpg" alt="Wedding Location Image" class="img-fluid cover-image">
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="guest_email" id="label_email">Email *</label>
-                                        <input type="email" class="form-control" id="guest_email" name="guest_email" required>
+                                <div class="row align-items-stretch">
+                                    <div class="col-lg-6 d-flex align-items-center some-image">
+                                        <img src="images/AnaCel2.jpg" alt="Wedding Location Image" class="img-fluid cover-image">
                                     </div>
-                                    <div class="form-group col-md-4 text-left px-2">
-                                        <legend class="col-form-label" id="attendance">¿Estarás presente? *</legend>
-                                        <div class="form-check form-check-inline">
-                                            <input type="radio" class="form-check-input" id="attending_yes" name="guest_attendance" value="Si" required>
-                                            <label class="form-check-label" for="attending_yes" id="label_yes">Si</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input type="radio" class="form-check-input" id="attending_no" name="guest_attendance" value="No" required>
-                                            <label class="form-check-label" for="attending_no" id="label_no">No</label>
-                                        </div>
+                                    <div class="col-lg-6 d-flex flex-column justify-content-between">
+                                        <p id="Fiesta2">Nuestra celebración tendrá una dinámica de compartir, por favor prepara tu mejor platillo y tráelo con la bebida que más te guste. En la variedad está el placer!</p>
+                                        <p id="Fiesta3">Habrá música en vivo y espacio, si deseas cantar, tocar algún instrumento, bailar u otros eres más que bienvenido!</p>
+                                        <p id="Fiesta4">No imponemos un código de vestimenta, solo vénganse bonitos y gorditos muchachos &#x1F60A</p>
+                                        <p><b id="PD-message">Pd: Por favor NO venir de blanco.</b></p>
+                                        <a class="nav-link2" id="event-map" href="https://maps.app.goo.gl/3fkYbBxBGmSTegHx9" target="_blank">Ver mapa</a>
+                                        <a class="nav-link2" id="event-calendar" href="weddingCelebration.ics" download="celebration.ics">Agendar en calendario</a>
+                                        <a href="#rsvp1" class="btn btn-primary mt-4" id="details2-rsvp">Confirmar asistencia</a>
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-10">
-                                        <label for="guest_comment" id="comments">Comentarios o preguntas</label>
-                                        <textarea class="form-control" id="guest_comment" name="guest_comment" rows="4"></textarea>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="form-row text-center">
-                                    <div class="form-group col-md-10">
-                                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="send-button">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Custom-styled alert container -->
-            <div id="custom-alert" class="custom-alert"></div>
-        </div>
-    </section>
+        </section>
+    
+        <!-- Photo Section -->
+        <section id="foto" class="page-section section pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 id="photo-title">Subir una foto</h2>
+                    </div>
+                </div>
+    
+                <!-- Explanation Text -->
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <p id="share-message">¡Hagamos felices a los novios! Llena un álbum de fotos durante el día de la boda o después. Por favor, utiliza el hashtag cuando publiques fotos en las redes sociales</p><b id="hashtag">#AllYouNeedIsLove</b>
+                    </div>
+                </div>
+                <div class="row mt-4 custom-row upload-box rounded-lg">
+                    <div class="col-md-4">
+                        <img src="images/frame.png" alt="Wedding photo QR" class="img-fluid cover-image">
+                    </div>
+                    <div class="col-md-8 qr-box">
+                        <p class="card-text" id="qr-information">Utiliza este código QR para dirigirte a un formulario donde podras subir tus fotos y compartir un momento. Apunta la cámara del teléfono al código QR y sigue el enlace.Cada invitado puede hacer una foto y luego subir las fotos durante el día de la boda o más tarde.</p>
+                        <br>
+                        <p><b id="photo-limit">El límite es 10 fotografías por formulario.</b></p>
+                        <p id="size-limit">Se puede ingresar al formulario cuantas veces desees. Las fotos no deben exceder los 100MB.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- RSVP Section -->
+        <section id="rsvp1" class="page-section section pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 id="rsvp-title">Asistencia</h2>
+                    </div>
+                </div>
+    
+                <!-- Explanation Text -->
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <p id="rsvp-message">Estamos felices de celebrar contigo este día tan especial, por favor confirma tu asistencia antes del 12 de octubre 2023.</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-5 text-center">
+                                <img src="images/AnaCel4.jpg" alt="Wedding photo QR" class="img-fluid cover2 cover">
+                            </div>
+                            <div class="card col-lg-7 form-column px-0">
+                                <div class="card-body form-container mx-auto">
+                                    <form id="rsvp-form">
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-6">
+                                                <label for="guest_name" id="label_name">Nombre *</label>
+                                                <input type="text" class="form-control" id="guest_name" name="guest_name" required>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="guest_lastname" id="label_lastname">Apellido *</label>
+                                                <input type="text" class="form-control" id="guest_lastname" name="guest_lastname" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-8">
+                                                <label for="guest_email" id="label_email">Email *</label>
+                                                <input type="email" class="form-control" id="guest_email" name="guest_email" required>
+                                            </div>
+                                            <div class="form-group text-md-center text-left text-xs-left col-md-4 text-left px-2">
+                                                <legend class="col-form-label" id="attendance">¿Estarás presente? *</legend>
+                                                <div class="form-check form-check-inline">
+                                                    <input type="radio" class="form-check-input" id="attending_yes" name="guest_attendance" value="Si" required>
+                                                    <label class="form-check-label" for="attending_yes" id="label_yes">Si</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input type="radio" class="form-check-input" id="attending_no" name="guest_attendance" value="No" required>
+                                                    <label class="form-check-label" for="attending_no" id="label_no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row justify-content-center">
+                                            <div class="form-group col-md-12">
+                                                <label for="guest_comment" id="comments">Comentarios o preguntas</label>
+                                                <textarea class="form-control" id="guest_comment" name="guest_comment" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row text-center justify-content-center">
+                                            <div class="form-group col-md-12">
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block" id="send-button">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Custom-styled alert container -->
+                <div id="custom-alert" class="custom-alert"></div>
+            </div>
+        </section>
+    </main>
 
     <!-- Link to the external JavaScript file -->
     <script src="assetsB/scripts.js"></script>

@@ -1,16 +1,9 @@
-.card-with-bg {
-    background-image: url('./../images/weddingBackground.jpeg'); /* Replace with your image path */
-    background-size: cover; /* Adjust this to control image sizing */
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh; /* Set the height of the card to the viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-
+  
 /* Apply Fira Sans font to specific elements */
 body, h1, h2, p, .btn {
     font-family: 'Fira Sans', sans-serif;
@@ -29,10 +22,17 @@ body, h1, h2, p, .btn {
     font-weight: bold;
 }
 
+main.centered-section {
+    flex-grow: 1; /* Takes up all available vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Style for the section transitions */
 .page-section {
-    min-height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -45,18 +45,24 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: #fff; /* Text color for better visibility on the image */
+    background-attachment: fixed; /* Add this line */
+    color: #07203e; /* Text color for better visibility on the image */
+    min-height: 100%; /* Set a minimum height to cover the content */
+    display: flex;
+    flex-direction: column;
 }
 
 #welcome-title {
     font-family: 'Dancing Script', cursive;
     font-size: 5em;
     font-weight: bold;
+    color: #fff;
 }
 
 #couple-names, #couple-date, #details-title, #photo-title {
     font-family: 'Fira Sans', sans-serif;
     font-size: 2em;
+    color: #fff;
 }
 
 #details-title, #photo-title, #rsvp-title {
@@ -95,8 +101,9 @@ body {
     background-position: center center;
 }
 
-.welcome-section {
-    margin-top: 15em;
+.welcome-section img {
+    width: auto; /* Set the image height to cover the entire column */
+    height: 30vh;
 }
 
 #details {
@@ -126,13 +133,21 @@ body {
 }
 
 .upload-box {
-    border: 0.2em dashed #6aa5d8; /* Add a dashed border with a color of your choice */
+    border: 0.2em dashed #07203e; /* Add a dashed border with a color of your choice */
     padding: 20px; /* Add padding for spacing */
     background-color: hsla(208, 59%, 63%, 0.172);
 }
 
 #hashtag {
     color: #07203e;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-group {
+    text-align: left;
 }
 
 #rsvp-form label, legend {
@@ -147,7 +162,7 @@ legend {
 /* Custom CSS for form field styling */
 .form-control {
     background-color: hsla(208, 59%, 63%, 0.172); /* Set your desired background color */
-    border: 2px solid #6aa5d8; /* Set your desired border color and width */
+    border: 2px solid #07203e; /* Set your desired border color and width */
     border-radius: 5px; /* Rounded corners */
 }
 
@@ -200,7 +215,7 @@ legend {
         border-radius: 4px;
     }
 
-    #Fiesta2, #reception-title {
+    #Fiesta2, #reception-title, .form-container, #qr-information {
         margin-top: 1em;
     }
 
@@ -211,7 +226,26 @@ legend {
     .some-row, #Fiesta5 {
         margin-bottom: 0% !important;
     }
+
+    .cover {
+        width: 100% !important; /* Set the image height to cover the entire column */
+        height: auto !important;
+    }
 }
+
+@media (min-width: 992px) {
+    .form-column {
+        display: flex;
+        align-items: center;
+        flex-grow: 1; /* Allow the form-container to grow and fill available space */
+    }
+
+    .cover2 {
+        width: auto; /* Set the image height to cover the entire column */
+        height: 100%;
+    }
+}
+
 
 #language-toggle {
     border: 1px solid transparent;

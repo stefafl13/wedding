@@ -21,7 +21,8 @@ function switchLanguage(language, flag) {
         document.getElementById('qr-information').textContent = "Utilisez ce code QR pour accéder à un formulaire où vous pourrez télécharger vos photos et partager un moment. Pointez l'appareil photo de votre téléphone sur le code QR et suivez le lien. Chaque invité peut prendre une photo puis télécharger les photos pendant le jour du mariage ou plus tard.";
         document.getElementById('photo-limit').textContent = 'La limite est de 10 photographies par formulaire.';
         document.getElementById('size-limit').textContent = 'Vous pouvez saisir le formulaire autant de fois que vous le souhaitez. Les photos ne doivent pas dépasser 100 Mo.';
-        document.getElementById('rsvp-message').textContent = 'Nous sommes ravis de célébrer notre grand jour avec vous, pensez à confirmer votre présence avant le 6 octobre 2023.';
+        document.getElementById('rsvp-title').textContent = 'RSVP';
+        document.getElementById('rsvp-message').textContent = 'Nous sommes ravis de célébrer notre grand jour avec vous, pensez à confirmer votre présence avant le 12 octobre 2023.';
         document.getElementById('label_name').textContent = 'Prénom *';
         document.getElementById('label_lastname').textContent = 'Nom de famille *';
         document.getElementById('label_email').textContent = 'Cérémonie';
@@ -60,7 +61,8 @@ function switchLanguage(language, flag) {
         document.getElementById('qr-information').textContent = 'Utiliza este código QR para dirigirte a un formulario donde podras subir tus fotos y compartir un momento. Apunta la cámara del teléfono al código QR y sigue el enlace.Cada invitado puede hacer una foto y luego subir las fotos durante el día de la boda o más tarde.';
         document.getElementById('photo-limit').textContent = 'El límite es 10 fotografías por formulario.';
         document.getElementById('size-limit').textContent = 'Se puede ingresar al formulario cuantas veces desees. Las fotos no deben exceder los 100MB.';
-        document.getElementById('rsvp-message').textContent = 'Estamos felices de celebrar contigo este día tan especial, por favor confirma tu asistencia antes del 6 de octubre 2023.';
+        document.getElementById('rsvp-title').textContent = 'Asistencia';
+        document.getElementById('rsvp-message').textContent = 'Estamos felices de celebrar contigo este día tan especial, por favor confirma tu asistencia antes del 12 de octubre 2023.';
         document.getElementById('label_name').textContent = 'Nombre *';
         document.getElementById('label_lastname').textContent = 'Apellido *';
         document.getElementById('label_email').textContent = 'Email *';
