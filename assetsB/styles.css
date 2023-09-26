@@ -41,7 +41,7 @@ main.centered-section {
 
 /* Background image for the Welcome section */
 body {
-    background-image: url('./../images/blueGradient2.jpeg'); /* Replace with your welcome image path */
+    background-image: url('./../images/dark1.jpg'); /* Replace with your welcome image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -233,14 +233,15 @@ legend {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .form-column {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between; /* Center content horizontally */
         flex-grow: 1; /* Allow the form-container to grow and fill available space */
     }
 
-    .cover2 {
+    .cover3 {
         width: auto; /* Set the image height to cover the entire column */
         height: 100%;
     }

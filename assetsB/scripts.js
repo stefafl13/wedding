@@ -114,7 +114,7 @@ function setNavbarTextColor(sectionId) {
             link.style.color = '#fff';
         });
         brandLink.style.color = '#fff';
-        bodyElement.style.backgroundImage = "url('images/blueGradient2.jpeg')"; 
+        bodyElement.style.backgroundImage = "url('images/blue1.jpg')"; 
     } else {
         // If in other sections, set text color to blue
         if (window.innerWidth > 991) {
@@ -127,7 +127,7 @@ function setNavbarTextColor(sectionId) {
             });
         }
         brandLink.style.color = '#07203e';
-        bodyElement.style.backgroundImage = "url('images/weddingBackground.jpeg')"; 
+        bodyElement.style.backgroundImage = "url('images/orchid3.jpg')"; 
     }
 }
 
