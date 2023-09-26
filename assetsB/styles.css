@@ -41,7 +41,7 @@ main.centered-section {
 
 /* Background image for the Welcome section */
 body {
-    background-image: url('./../images/dark1.jpg'); /* Replace with your welcome image path */
+    background-image: url('./../images/blue2.jpg'); /* Replace with your welcome image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

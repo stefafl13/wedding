@@ -114,7 +114,7 @@ function setNavbarTextColor(sectionId) {
             link.style.color = '#fff';
         });
         brandLink.style.color = '#fff';
-        bodyElement.style.backgroundImage = "url('images/blue1.jpg')"; 
+        bodyElement.style.backgroundImage = "url('images/blue2.jpg')"; 
     } else {
         // If in other sections, set text color to blue
         if (window.innerWidth > 991) {
